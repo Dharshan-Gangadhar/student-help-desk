@@ -4,9 +4,8 @@ require('dotenv').config();
 
 const uploadRoutes = require('./routes/upload');
 const chatRoutes = require('./routes/chat');
-
 const rateLimit = require('express-rate-limit');
-
+const app = express();
 const apiLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // Limit each IP to 100 requests per window
@@ -17,7 +16,7 @@ const apiLimiter = rateLimit({
 
 // Apply to all API routes
 app.use('/api/', apiLimiter);
-const app = express();
+
 app.use(cors());
 app.use(express.json());
 
