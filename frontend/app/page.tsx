@@ -32,7 +32,7 @@ export default function Home() {
     formData.append('document', file);
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/upload`, {
+      const res = await fetch('https://student-help-desk-backend.onrender.com/api/upload', {
         method: 'POST',
         body: formData,
       });
@@ -60,7 +60,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat`, {
+      const res = await fetch('https://student-help-desk-backend.onrender.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: userQuery }),
