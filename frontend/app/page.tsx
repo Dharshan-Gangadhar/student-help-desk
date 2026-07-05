@@ -113,7 +113,7 @@ export default function Home() {
         </div>
 
         <div className="hidden md:block text-xs text-gray-400">
-          Built in 48 Hours • System Active
+          Your campus, decoded. Ask anything, anytime. 
         </div>
       </section>
 
