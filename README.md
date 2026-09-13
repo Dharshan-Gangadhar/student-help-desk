@@ -1,4 +1,4 @@
-# 🎓 Smart Campus Helpdesk MVP
+# 🎓 Student Helpdesk MVP
 
 A full-stack, Retrieval-Augmented Generation (RAG) AI application designed to act as a 24/7 intelligent assistant for university students. The system allows administrators to upload custom knowledge bases (like student handbooks or policy PDFs) and provides a conversational interface for students to ask questions about academic policies, fees, hostel rules, and more.
 
